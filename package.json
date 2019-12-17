@@ -1,0 +1,30 @@
+{
+    "name":             "v-scheduled",
+    "version":          "1.0.0",
+    "description":      "A simple tool to create timers from vue component's methods",
+    "main":             "src/index",
+    "scripts":          {
+        "test": "test"
+    },
+    "repository":       {
+        "type": "git",
+        "url":  "git+https://github.com/fxmaxvl/v-scheduled.git"
+    },
+    "keywords":         [
+        "vuejs",
+        "vue",
+        "timers",
+        "schedules",
+        "js",
+        "javascript"
+    ],
+    "peerDependencies": {
+        "vue": "^2.6.11"
+    },
+    "author":           "sadowsky",
+    "license":          "MIT",
+    "bugs":             {
+        "url": "https://github.com/fxmaxvl/v-scheduled/issues"
+    },
+    "homepage":         "https://github.com/fxmaxvl/v-scheduled#readme"
+}

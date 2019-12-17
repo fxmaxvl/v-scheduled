@@ -2,7 +2,7 @@ import install from './plugin';
 import mixin from './mixin';
 
 function autoregister() {
-    if (window.Vue) {
+    if (typeof window && window.Vue) {
         window.Vue.use(install);
     }
 }

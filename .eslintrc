@@ -6,7 +6,7 @@
     "extends":       [
         "eslint:recommended"
     ],
-    "plugins":       ["babel", "vue"],
+    "plugins":       ["babel"],
     "parserOptions": {
         "parser":      "babel-eslint",
         "ecmaVersion": 2019,

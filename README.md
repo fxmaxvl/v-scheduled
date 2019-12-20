@@ -1,10 +1,11 @@
 # v-scheduled
-A simple tool to create timers from methods in a more declarative way (VUE way)
-If you want the component to perform some action repeatedly at some interval.
+> A simple tool to create timers from methods in a more declarative way (VUE way)
+>
+> If you want the component to perform some action repeatedly at some interval try v-scheduled
 
 ### 1. Install:
 ```bash
-yarn add v-scheduled
+yarn add v-scheduled // or
 ```
 
 ### 2. Require:
@@ -14,6 +15,21 @@ import VScheduled from 'v-scheduled';
 
 Vue.use(VScheduled);
 ```
+
+> or if you wish, you could use mixin and attach it only for some components:
+
+ ```js
+ import { mixin } from 'v-scheduled';
+
+export default {
+    name: 'YourComponent',
+    
+    mixins: [ mixin() ],
+    
+    ...
+};
+
+ ```
 
 ### 3. Use in Your Components:
 
@@ -29,13 +45,14 @@ Vue.use(VScheduled);
         pingNum: 0
       };
     },
-    method: {
+    
+    methods: {
         ping() {
            this.pingNum += 1;
         }
     },
     
-    // this is what you need add to your code
+    // this is what you need to add to your code
     scheduled: {
         ping: 1000
     },

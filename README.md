@@ -5,7 +5,7 @@
 
 ### 1. Install:
 ```bash
-yarn add v-scheduled // or
+yarn add v-scheduled // or npm install v-scheduled
 ```
 
 ### 2. Require:

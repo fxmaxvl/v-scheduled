@@ -8,6 +8,7 @@ yarn add v-scheduled
 ```
 
 ### 2. Require:
+
 ```js
 import VScheduled from 'v-scheduled';
 

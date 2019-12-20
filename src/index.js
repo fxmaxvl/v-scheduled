@@ -1,8 +1,5 @@
 import mixin from './mixin';
+const plugin = Vue => Vue.mixin(mixin());
 
-const install = Vue => Vue.mixin(mixin());
-
-export {
-    install,
-    mixin,
-};
+export default plugin;
+export { mixin };
